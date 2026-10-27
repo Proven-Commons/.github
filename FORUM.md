@@ -78,9 +78,10 @@ Commons repository that turns on a board of its own.
 | Support | Sponsorship | Open-ended | `sponsorship` | Grants and sponsored verification. Has a form. |
 | Record | Moderation log | Announcement | `moderation-log` | One entry per moderation action on either board. |
 
-**Labels.** A thread about one library carries its `lib:` label (`lib: tar`, `lib: json`, …). Academy threads
-carry a `level:` label. A bug found in an original library during specification work gets
-`bug found upstream`, which feeds the year-one count of bugs reported upstream.
+**Labels.** A thread about one library carries its `lib:` label (`lib: tar`, `lib: json`, …), which
+`gate.py labels` makes. Academy threads carry a `level:` label, and a bug found in an original library during
+specification work gets `upstream: bug found`, which feeds the year-one count of bugs reported upstream. Those
+two come from the [labelling standard](LABELS-STANDARD.md), shared with every issue and pull request.
 
 ## Which repositories have a board
 

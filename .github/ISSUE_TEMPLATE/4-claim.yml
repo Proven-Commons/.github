@@ -1,0 +1,43 @@
+name: A claim or the verified bar
+description: A theorem that states less than its claim, or an item of the verified bar that is not met.
+labels: ["type: bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Finding a mistake in a claim is a success to report, not a failure to hide. Confirmed findings become a review record in the mission repository, credited to you. A security hole in the library itself goes to its security policy instead.
+  - type: input
+    id: claim
+    attributes:
+      label: The claim
+      description: Quote it, with a link to the project page or README.
+    validations:
+      required: true
+  - type: checkboxes
+    id: bar
+    attributes:
+      label: Which items of the verified bar it breaks
+      description: Tick any that apply.
+      options:
+        - label: "1. The specification: public, approved by someone else, pinned"
+        - label: 2. A public claim and the theorem behind it
+        - label: 3. lake comparator does not re-check the approved statements
+        - label: 4. The code that runs is not the code that was proved
+        - label: "5. Differential tests: missing, or not as recorded"
+        - label: 6. Something outside the proof is not listed
+        - label: 7. CI, the required check, or a release from the wrong branch
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: The statement and why it falls short, a wrong program that meets it, or commands and output.
+    validations:
+      required: true
+  - type: dropdown
+    id: ai
+    attributes:
+      label: Who wrote this report
+      options:
+        - A person
+        - A person wrote it, with help from an AI agent
+        - An AI agent wrote it, and a person reviewed it

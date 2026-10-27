@@ -317,28 +317,3 @@ description = "Threads about Proven-Commons/mission"
 name = "lib: site"
 color = "5319e7"
 description = "Threads about Proven-Commons/site"
-
-[[labels]]
-name = "level: 0"
-color = "0e8a16"
-description = "Reader"
-
-[[labels]]
-name = "level: 1"
-color = "0e8a16"
-description = "Apprentice"
-
-[[labels]]
-name = "level: 2"
-color = "0e8a16"
-description = "Verifier"
-
-[[labels]]
-name = "level: 3"
-color = "0e8a16"
-description = "Spec Lead and Mentor"
-
-[[labels]]
-name = "bug found upstream"
-color = "b60205"
-description = "A bug in the original library, found while writing a specification"
