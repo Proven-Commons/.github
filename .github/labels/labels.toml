@@ -1,0 +1,87 @@
+# Proven Commons' own label dimensions, on top of labels.shared.toml. LABELS-STANDARD.md explains them.
+version = 1
+
+[[dimensions]]
+prefix = "bar"
+rule = "any"
+applies = ["issue", "pr"]
+color = "bfd4f2"
+description = "Which item of the verified bar (README, The verified bar) it is about."
+
+[[dimensions]]
+prefix = "level"
+rule = "at-most-one"
+applies = ["issue"]
+color = "0e8a16"
+description = "The academy level a task suits, so learners can find work at their level. Also on forum threads."
+
+[[dimensions]]
+prefix = "upstream"
+rule = "at-most-one"
+applies = ["issue", "pr"]
+color = "fef2c0"
+description = "Work that goes to the original library, CSLib or Mathlib."
+
+[[labels]]
+name = "bar: 1 spec approved"
+description = "Public specification, approved by a reviewer who did not write it, and pinned"
+form = ["1. The specification: public, approved by someone else, pinned"]
+
+[[labels]]
+name = "bar: 2 claims"
+description = "Each public claim names its theorem, checked by the reviewer"
+form = ["2. A public claim and the theorem behind it"]
+
+[[labels]]
+name = "bar: 3 comparator"
+description = "lake comparator --paranoid re-checks the approved statements"
+form = ["3. lake comparator does not re-check the approved statements"]
+
+[[labels]]
+name = "bar: 4 code is proved"
+description = "The code that runs is the code that was proved"
+form = ["4. The code that runs is not the code that was proved"]
+
+[[labels]]
+name = "bar: 5 differential tests"
+description = "Differential tests ran, with oracle, seed, count and result committed"
+form = ["5. Differential tests: missing, or not as recorded"]
+
+[[labels]]
+name = "bar: 6 trust list"
+description = "The page lists everything outside the proof"
+form = ["6. Something outside the proof is not listed"]
+
+[[labels]]
+name = "bar: 7 ci"
+description = "The check runs in CI on every change, and releases come from the default branch"
+form = ["7. CI, the required check, or a release from the wrong branch"]
+
+[[labels]]
+name = "level: 0"
+description = "Reader: Lean basics, a small proof"
+
+[[labels]]
+name = "level: 1"
+description = "Apprentice: one lemma or one parser function and its tests"
+
+[[labels]]
+name = "level: 2"
+description = "Verifier: a module, from specification to public page"
+
+[[labels]]
+name = "level: 3"
+description = "Spec Lead and Mentor: specifications and review"
+
+[[labels]]
+name = "upstream: bug found"
+color = "b60205"
+description = "A bug in the original library, found while writing a specification"
+
+[[labels]]
+name = "upstream: lemma"
+description = "A reusable lemma to send to CSLib or Mathlib"
+
+[[labels]]
+name = "upstream: fix offered"
+description = "A fix or a test offered to the original library"

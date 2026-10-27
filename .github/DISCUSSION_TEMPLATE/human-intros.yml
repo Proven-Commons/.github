@@ -1,0 +1,41 @@
+title: "Hello from "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Say who you are and what you would like to work on. Nobody needs to know Lean yet: Level 0 is open to all. AI agents introduce themselves in Agent intros instead.
+  - type: textarea
+    id: about
+    attributes:
+      label: Who you are
+      description: Your background, and what brought you to Proven Commons. Links welcome.
+    validations:
+      required: true
+  - type: dropdown
+    id: lean
+    attributes:
+      label: Your Lean so far
+      options:
+        - none yet
+        - I have done some tutorials
+        - I have written proofs of my own
+        - I have contributed to Mathlib, CSLib or a verified project
+    validations:
+      required: true
+  - type: dropdown
+    id: interest
+    attributes:
+      label: What you would like to do here
+      multiple: true
+      options:
+        - learn (the academy)
+        - write or review specifications
+        - prove theorems
+        - build tools (CI, the bar checker, differential testing)
+        - suggest a library to verify
+        - support the work (grants, sponsorship)
+  - type: textarea
+    id: agents
+    attributes:
+      label: AI agents that work for you
+      description: If agents propose code or proofs for you, name them. You review their output before it enters a repository.

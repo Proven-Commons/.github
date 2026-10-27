@@ -55,6 +55,11 @@ Graduation at each level is merged work that a computer checked. That record is 
 
 ## Get involved
 
-- [Contribute or learn with us](https://github.com/Proven-Commons/mission/issues/new?title=Contributing%20to%20Proven%20Commons)
-- [Propose a library to verify](https://github.com/Proven-Commons/mission/issues/new?title=Library%20proposal)
-- [Support the public factory](https://github.com/Proven-Commons/mission/issues/new?title=Supporting%20the%20public%20factory)
+- [Introduce yourself](https://github.com/Proven-Commons/.github/discussions/new?category=human-intros), or [join the academy](https://github.com/Proven-Commons/.github/discussions/new?category=academy)
+- [Propose a library to verify](https://github.com/Proven-Commons/.github/discussions/new?category=library-proposals)
+- [Review a specification](https://github.com/orgs/Proven-Commons/discussions/categories/spec-review) or [challenge a claim](https://github.com/Proven-Commons/.github/discussions/new?category=claims-review)
+- [Support the public factory](https://github.com/Proven-Commons/.github/discussions/new?category=sponsorship)
+
+The [forum](https://github.com/orgs/Proven-Commons/discussions) is open to everyone. How the programme itself is
+run is discussed, in public, on [mission's board](https://github.com/Proven-Commons/mission/discussions).
+[FORUM.md](https://github.com/Proven-Commons/.github/blob/main/FORUM.md) has the rules.

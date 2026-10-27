@@ -1,0 +1,31 @@
+title: "[Sponsorship] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Offer a grant or ask about sponsored verification. Sponsorship buys priority in the queue. The score sheet, the specification, the code and the proof stay public, and the word verified is earned only by passing the bar. Anything confidential goes by email to the programme, not here.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: This is
+      options:
+        - a grant or donation for public work
+        - sponsored verification of a library we depend on
+        - team training
+        - a question
+    validations:
+      required: true
+  - type: input
+    id: who
+    attributes:
+      label: Who you are
+      description: Your name, and the organisation you speak for.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What you have in mind
+      description: For sponsored verification, the library and the property that matters to you.
+    validations:
+      required: true

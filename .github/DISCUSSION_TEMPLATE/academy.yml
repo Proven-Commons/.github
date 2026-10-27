@@ -1,0 +1,35 @@
+title: "[Academy] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Join a level, apply for a cohort, or post a graduation record. Graduation at each level is merged work that a computer checked. Level 1 applicants are chosen by a worked problem, not by a CV.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: This is
+      options:
+        - joining Level 0 (Reader, open to all)
+        - applying for a Level 1 cohort (Apprentice)
+        - asking to move to Level 2 (Verifier) or Level 3 (Spec Lead and Mentor)
+        - a graduation record
+        - a question about the academy
+    validations:
+      required: true
+  - type: textarea
+    id: work
+    attributes:
+      label: Your work so far
+      description: For an application, your worked problem. For a graduation, the merged pull requests and the checks that passed. Links, please.
+    validations:
+      required: true
+  - type: textarea
+    id: time
+    attributes:
+      label: Time and support
+      description: How many hours a week you can give, and whether you need a stipend or sponsorship to take part.
+  - type: input
+    id: mentor
+    attributes:
+      label: Mentor
+      description: If you already work with a mentor, who.

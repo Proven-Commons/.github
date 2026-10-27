@@ -1,0 +1,44 @@
+title: "[Help wanted] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Offer an open piece of work: a module, a lemma, a parser function, a test harness. Say what a newcomer would do first. Apprentices own one lemma or one function and its tests, so small, well-cut pieces are the most useful.
+  - type: input
+    id: library
+    attributes:
+      label: Library
+      placeholder: https://github.com/Proven-Commons/
+    validations:
+      required: true
+  - type: textarea
+    id: task
+    attributes:
+      label: The task
+      description: The statement to prove, or the function and the tests it needs.
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Suited to
+      options:
+        - Level 0 (Reader)
+        - Level 1 (Apprentice)
+        - Level 2 (Verifier)
+        - anyone with the right skill
+    validations:
+      required: true
+  - type: textarea
+    id: first
+    attributes:
+      label: The first step
+      description: A file to read, a command to run, or a sorry to fill.
+    validations:
+      required: true
+  - type: input
+    id: mentor
+    attributes:
+      label: Who answers questions
+    validations:
+      required: true

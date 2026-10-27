@@ -1,0 +1,239 @@
+# Every Proven-Commons repository: its custom properties and its topics, under the labelling standard
+# (LABELS-STANDARD.md). `sync.py repos plan` shows what differs on GitHub; `repos apply` sets it. Owners only.
+# A stage moves to verified only when the bar check passes with a separate reviewer.
+
+version = 1
+org = "Proven-Commons"
+required_topics = ["proven-commons"]
+
+[properties.kind]
+type = "multi_select"
+values = ["org-home", "core", "site", "library"]
+description = "What the repository is"
+
+[properties.domain]
+type = "multi_select"
+values = ["encodings", "data-formats", "archives", "network", "identifiers"]
+description = "The area of the library, as the profile README groups them"
+
+[properties.stage]
+type = "single_select"
+values = ["started", "spec-review", "verified"]
+description = "How far it is along the path to the verified bar"
+
+[properties.board]
+type = "single_select"
+values = ["main", "internal", "project", "none"]
+description = "Its discussion board under the forum standard"
+
+[properties.owner]
+type = "string"
+description = "The person or team who answers for it"
+
+[[repos]]
+name = ".github"
+kind = ["org-home"]
+board = "main"
+
+[[repos]]
+name = "mission"
+kind = ["core", "site"]
+board = "internal"
+topics = ["formal-verification"]
+
+[[repos]]
+name = "site"
+kind = ["site"]
+board = "none"
+
+[[repos]]
+name = "tar"
+kind = ["library"]
+domain = ["archives"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "archives"]
+
+[[repos]]
+name = "zip"
+kind = ["library"]
+domain = ["archives"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "archives"]
+
+[[repos]]
+name = "png"
+kind = ["library"]
+domain = ["archives"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "archives"]
+
+[[repos]]
+name = "codec"
+kind = ["library"]
+domain = ["encodings"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "encodings"]
+
+[[repos]]
+name = "utf"
+kind = ["library"]
+domain = ["encodings"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "encodings"]
+
+[[repos]]
+name = "punycode"
+kind = ["library"]
+domain = ["encodings"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "encodings"]
+
+[[repos]]
+name = "bech32"
+kind = ["library"]
+domain = ["encodings"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "encodings"]
+
+[[repos]]
+name = "json"
+kind = ["library"]
+domain = ["data-formats"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "data-formats"]
+
+[[repos]]
+name = "toml"
+kind = ["library"]
+domain = ["data-formats"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "data-formats"]
+
+[[repos]]
+name = "csv"
+kind = ["library"]
+domain = ["data-formats"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "data-formats"]
+
+[[repos]]
+name = "cbor"
+kind = ["library"]
+domain = ["data-formats"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "data-formats"]
+
+[[repos]]
+name = "protobuf"
+kind = ["library"]
+domain = ["data-formats"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "data-formats"]
+
+[[repos]]
+name = "messagepack"
+kind = ["library"]
+domain = ["data-formats"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "data-formats"]
+
+[[repos]]
+name = "bencode"
+kind = ["library"]
+domain = ["data-formats"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "data-formats"]
+
+[[repos]]
+name = "http"
+kind = ["library"]
+domain = ["network"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "network"]
+
+[[repos]]
+name = "websocket"
+kind = ["library"]
+domain = ["network"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "network"]
+
+[[repos]]
+name = "dns"
+kind = ["library"]
+domain = ["network"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "network"]
+
+[[repos]]
+name = "ip"
+kind = ["library"]
+domain = ["network"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "network"]
+
+[[repos]]
+name = "hostname"
+kind = ["library"]
+domain = ["network"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "network"]
+
+[[repos]]
+name = "redis"
+kind = ["library"]
+domain = ["network", "data-formats"]
+stage = "spec-review"
+board = "none"
+topics = ["lean", "formal-verification", "network", "data-formats"]
+
+[[repos]]
+name = "uuid"
+kind = ["library"]
+domain = ["identifiers"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "identifiers"]
+
+[[repos]]
+name = "rfc"
+kind = ["library"]
+domain = ["identifiers"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "identifiers"]
+
+[[repos]]
+name = "semver"
+kind = ["library"]
+domain = ["identifiers"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "identifiers"]
+
+[[repos]]
+name = "pep440"
+kind = ["library"]
+domain = ["identifiers"]
+stage = "started"
+board = "none"
+topics = ["lean", "formal-verification", "identifiers"]

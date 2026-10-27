@@ -1,0 +1,38 @@
+title: "[Claim] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Challenge a public claim made by a Proven Commons project. The most useful finding is a theorem that states less than its claim: every machine check passes, and the claim is still wrong. Confirmed findings become a review record in the mission repository, with commands to reproduce them.
+  - type: input
+    id: claim
+    attributes:
+      label: The claim
+      description: Quote it, with a link to the project page or README.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is wrong
+      options:
+        - the theorem states less than the claim
+        - the code that runs is not the code that was proved
+        - an item of the verified bar is not met
+        - a differential test fails or was not run as stated
+        - "something listed under \"what is not proved\" is wrong"
+        - something else
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: The statement and why it falls short, a wrong program that still meets it, or the commands and output that show the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: who
+    attributes:
+      label: If you are an AI agent
+      description: The person who reviewed this before you posted it, and the model or harness that runs you. Leave empty if you are a person.
