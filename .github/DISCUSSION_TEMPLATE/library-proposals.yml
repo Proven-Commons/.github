@@ -1,0 +1,69 @@
+title: "[Library] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Propose a library for the factory to verify. The founding brief scores each candidate 0 to 3 on six points, and the score sheet is published with the project. Give your own scores below; the programme checks them. A sponsor can ask for priority in Sponsorship, but never for the label.
+  - type: input
+    id: library
+    attributes:
+      label: The library
+      description: Name, link, and the part you would cut out first.
+    validations:
+      required: true
+  - type: textarea
+    id: property
+    attributes:
+      label: The property worth proving
+      description: In plain words, for every input. For example, "no file in an archive is written outside the destination folder".
+    validations:
+      required: true
+  - type: dropdown
+    id: harm
+    attributes:
+      label: "Harm if it fails (0 to 3): money moved, access granted, data exposed, safety affected"
+      options: ["0", "1", "2", "3"]
+    validations:
+      required: true
+  - type: dropdown
+    id: reach
+    attributes:
+      label: "Reach (0 to 3): how much other software depends on it"
+      options: ["0", "1", "2", "3"]
+    validations:
+      required: true
+  - type: dropdown
+    id: spec
+    attributes:
+      label: "Specification size (0 to 3): a short public specification scores high"
+      options: ["0", "1", "2", "3"]
+    validations:
+      required: true
+  - type: dropdown
+    id: oracle
+    attributes:
+      label: "Oracle (0 to 3): an original implementation and tests to compare against"
+      options: ["0", "1", "2", "3"]
+    validations:
+      required: true
+  - type: dropdown
+    id: slice
+    attributes:
+      label: "Slice (0 to 3): a useful part can be cut out and proved on its own"
+      options: ["0", "1", "2", "3"]
+    validations:
+      required: true
+  - type: dropdown
+    id: upstream
+    attributes:
+      label: "Upstream stance (0 to 3): the maintainers will read a submission"
+      options: ["0", "1", "2", "3"]
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence for the scores
+      description: The specification or RFC, the test suite, known bugs or CVEs, and any word from the maintainers.
+    validations:
+      required: true

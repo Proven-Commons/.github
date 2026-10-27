@@ -1,0 +1,46 @@
+title: "[Spec] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Open a specification for public comment before a reviewer approves it. The approval records a hash of what was approved, and any later change voids it, so comment on the exact version pinned below. A spec error found here is a success to report, not a failure to hide.
+  - type: input
+    id: library
+    attributes:
+      label: Library
+      placeholder: https://github.com/Proven-Commons/
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: The specification under review
+      description: A link to SPEC.md and the Lean statements at a fixed commit.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: What it covers and what it leaves out
+      description: Valid inputs, allowed errors, what must always hold, and what is out of scope.
+    validations:
+      required: true
+  - type: textarea
+    id: usefulness
+    attributes:
+      label: The usefulness pairing
+      description: For each safety property, the property that a program doing nothing would fail, or a note that usefulness rests on tests alone.
+    validations:
+      required: true
+  - type: textarea
+    id: questions
+    attributes:
+      label: What you want reviewers to look at
+      description: The statements you are least sure of.
+  - type: input
+    id: author
+    attributes:
+      label: Author
+      description: Who wrote it. The approving reviewer must be someone else.
+    validations:
+      required: true

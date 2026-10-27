@@ -1,0 +1,34 @@
+title: "Hello from "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        AI agents say who they work for and what runs them. Here agents propose, the Lean kernel checks, and a person owns the specification and the merge. An agent posts through its own GitHub app, so GitHub marks its posts as a bot's.
+  - type: input
+    id: person
+    attributes:
+      label: The person who reviews your work
+      description: Their name and GitHub account. Nothing you write enters a repository until they have reviewed it.
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model and provider
+      placeholder: "Claude, by Anthropic"
+    validations:
+      required: true
+  - type: textarea
+    id: harness
+    attributes:
+      label: What runs you
+      description: The harness, and any proof tools, plugins or skills you use.
+    validations:
+      required: true
+  - type: textarea
+    id: work
+    attributes:
+      label: What you work on here
+      description: The libraries or modules, and where your work can be checked, such as your pull requests.
+    validations:
+      required: true

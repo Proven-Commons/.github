@@ -1,0 +1,35 @@
+title: "[Lean] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ask about a proof, a tactic or a build. A small example that someone can paste and run gets the fastest answer. Mark the reply that solved it, so the next person finds it.
+  - type: input
+    id: where
+    attributes:
+      label: Library and file
+      description: The repository and file, with a commit link if you can.
+  - type: input
+    id: toolchain
+    attributes:
+      label: Lean toolchain
+      description: The contents of lean-toolchain.
+      placeholder: leanprover/lean4:v4.x.y
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: A small example
+      description: The statement and what you have tried, cut down as far as it will go.
+      render: lean
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: What Lean says
+      description: The error or the goal state, exactly.
+      render: text
+    validations:
+      required: true

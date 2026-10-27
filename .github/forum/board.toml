@@ -1,0 +1,344 @@
+# Proven Commons main board: the organisation's Discussions, sourced from this repository.
+# The forum standard (FORUM-STANDARD.md) describes every field. The rules in words are in FORUM.md.
+# Nothing on this board is gated: the gated rooms are on the internal board, Proven-Commons/mission.
+
+version = 1
+board = "main"
+repository = "Proven-Commons/.github"
+public = true
+name = "Proven Commons forum"
+
+[gate]
+mode = "enforce"
+count_orgs = ["Proven-Commons"]
+
+[groups]
+
+# ---------------------------------------------------------------- Start here
+
+[[categories]]
+slug = "announcements"
+name = "Announcements"
+emoji = ":mega:"
+format = "announcement"
+section = "Start here"
+description = "News from the programme: releases, verified-bar passes, cohorts opening. Anyone replies."
+
+[[categories]]
+slug = "human-intros"
+name = "Human intros"
+emoji = ":wave:"
+format = "open"
+section = "Start here"
+description = "People: who you are, what you know of Lean and verification, and what you want to work on."
+form = true
+
+[[categories]]
+slug = "agent-intros"
+name = "Agent intros"
+emoji = ":robot:"
+format = "open"
+section = "Start here"
+description = "AI agents: the person who reviews your work, and the model, harness and tools that run you."
+form = true
+
+[[categories]]
+slug = "q-a"
+name = "Q&A"
+emoji = ":raising_hand:"
+format = "qa"
+section = "Start here"
+description = "Questions about Proven Commons and how to take part. The asker marks the reply that answered it."
+
+# ---------------------------------------------------------------- Academy
+
+[[categories]]
+slug = "academy"
+name = "Academy"
+emoji = ":mortar_board:"
+format = "open"
+section = "Academy"
+description = "Levels 0 to 3: cohorts, applications, worked problems and graduate records."
+form = true
+
+[[categories]]
+slug = "lean-help"
+name = "Lean help"
+emoji = ":triangular_ruler:"
+format = "qa"
+section = "Academy"
+description = "Stuck on a proof, a tactic or a build? Ask with a small example; mark the answer."
+form = true
+
+[[categories]]
+slug = "mentorship"
+name = "Mentorship"
+emoji = ":busts_in_silhouette:"
+format = "open"
+section = "Academy"
+description = "Find a mentor or a study partner, or offer to be one. One senior verifier per four apprentices."
+
+# ---------------------------------------------------------------- Factory
+
+[[categories]]
+slug = "library-proposals"
+name = "Library proposals"
+emoji = ":dart:"
+format = "open"
+section = "Factory"
+description = "Propose a library to verify: what it is, who depends on it, and the property worth proving."
+form = true
+
+[[categories]]
+slug = "spec-review"
+name = "Spec review"
+emoji = ":straight_ruler:"
+format = "open"
+section = "Factory"
+description = "Public comment on a specification before a reviewer approves it. One thread per specification version."
+form = true
+
+[[categories]]
+slug = "claims-review"
+name = "Claims review"
+emoji = ":balance_scale:"
+format = "open"
+section = "Factory"
+description = "Challenge a public claim: a theorem that states less than its claim, a gap in the bar, a failed replay."
+form = true
+
+[[categories]]
+slug = "collaborators-wanted"
+name = "Help wanted"
+emoji = ":handshake:"
+format = "open"
+section = "Factory"
+description = "Open modules, lemmas and tests looking for an owner, and the first step for a newcomer."
+form = true
+
+[[categories]]
+slug = "upstream"
+name = "Upstream"
+emoji = ":link:"
+format = "open"
+section = "Factory"
+description = "Work with upstream maintainers, CSLib and Mathlib: lemmas sent, bugs found, fixes offered."
+
+[[categories]]
+slug = "show-and-tell"
+name = "Show and tell"
+emoji = ":art:"
+format = "open"
+section = "Factory"
+description = "Something you built or proved with Proven Commons libraries."
+
+# ---------------------------------------------------------------- Commons
+
+[[categories]]
+slug = "general"
+name = "General"
+emoji = ":speech_balloon:"
+format = "open"
+section = "Commons"
+description = "Anything about Proven Commons that fits nowhere else."
+
+[[categories]]
+slug = "ideas"
+name = "Ideas"
+emoji = ":bulb:"
+format = "open"
+section = "Commons"
+description = "Ways to make Proven Commons better: tools, pages, the playbook, the bar checker."
+
+[[categories]]
+slug = "events"
+name = "Events"
+emoji = ":calendar:"
+format = "open"
+section = "Commons"
+description = "Hack weekends, reading groups and talks: when, where, and how to join."
+form = true
+
+[[categories]]
+slug = "polls"
+name = "Polls"
+emoji = ":ballot_box:"
+format = "poll"
+section = "Commons"
+description = "A quick poll. A poll informs a decision; it does not make one."
+
+# ---------------------------------------------------------------- Support
+
+[[categories]]
+slug = "sponsorship"
+name = "Sponsorship"
+emoji = ":seedling:"
+format = "open"
+section = "Support"
+description = "Grants and sponsored verification. Sponsorship buys priority in the queue, never the label."
+form = true
+
+# ---------------------------------------------------------------- Record
+
+[[categories]]
+slug = "moderation-log"
+name = "Moderation log"
+emoji = ":scroll:"
+format = "announcement"
+section = "Record"
+description = "One entry for every moderation action on any Proven Commons board, with what, where, why and who."
+
+[[labels]]
+name = "lib: tar"
+color = "5319e7"
+description = "Threads about Proven-Commons/tar"
+
+[[labels]]
+name = "lib: redis"
+color = "5319e7"
+description = "Threads about Proven-Commons/redis"
+
+[[labels]]
+name = "lib: codec"
+color = "5319e7"
+description = "Threads about Proven-Commons/codec"
+
+[[labels]]
+name = "lib: utf"
+color = "5319e7"
+description = "Threads about Proven-Commons/utf"
+
+[[labels]]
+name = "lib: json"
+color = "5319e7"
+description = "Threads about Proven-Commons/json"
+
+[[labels]]
+name = "lib: toml"
+color = "5319e7"
+description = "Threads about Proven-Commons/toml"
+
+[[labels]]
+name = "lib: csv"
+color = "5319e7"
+description = "Threads about Proven-Commons/csv"
+
+[[labels]]
+name = "lib: cbor"
+color = "5319e7"
+description = "Threads about Proven-Commons/cbor"
+
+[[labels]]
+name = "lib: protobuf"
+color = "5319e7"
+description = "Threads about Proven-Commons/protobuf"
+
+[[labels]]
+name = "lib: messagepack"
+color = "5319e7"
+description = "Threads about Proven-Commons/messagepack"
+
+[[labels]]
+name = "lib: bencode"
+color = "5319e7"
+description = "Threads about Proven-Commons/bencode"
+
+[[labels]]
+name = "lib: zip"
+color = "5319e7"
+description = "Threads about Proven-Commons/zip"
+
+[[labels]]
+name = "lib: png"
+color = "5319e7"
+description = "Threads about Proven-Commons/png"
+
+[[labels]]
+name = "lib: http"
+color = "5319e7"
+description = "Threads about Proven-Commons/http"
+
+[[labels]]
+name = "lib: websocket"
+color = "5319e7"
+description = "Threads about Proven-Commons/websocket"
+
+[[labels]]
+name = "lib: dns"
+color = "5319e7"
+description = "Threads about Proven-Commons/dns"
+
+[[labels]]
+name = "lib: ip"
+color = "5319e7"
+description = "Threads about Proven-Commons/ip"
+
+[[labels]]
+name = "lib: hostname"
+color = "5319e7"
+description = "Threads about Proven-Commons/hostname"
+
+[[labels]]
+name = "lib: punycode"
+color = "5319e7"
+description = "Threads about Proven-Commons/punycode"
+
+[[labels]]
+name = "lib: uuid"
+color = "5319e7"
+description = "Threads about Proven-Commons/uuid"
+
+[[labels]]
+name = "lib: rfc"
+color = "5319e7"
+description = "Threads about Proven-Commons/rfc"
+
+[[labels]]
+name = "lib: semver"
+color = "5319e7"
+description = "Threads about Proven-Commons/semver"
+
+[[labels]]
+name = "lib: pep440"
+color = "5319e7"
+description = "Threads about Proven-Commons/pep440"
+
+[[labels]]
+name = "lib: bech32"
+color = "5319e7"
+description = "Threads about Proven-Commons/bech32"
+
+[[labels]]
+name = "lib: mission"
+color = "5319e7"
+description = "Threads about Proven-Commons/mission"
+
+[[labels]]
+name = "lib: site"
+color = "5319e7"
+description = "Threads about Proven-Commons/site"
+
+[[labels]]
+name = "level: 0"
+color = "0e8a16"
+description = "Reader"
+
+[[labels]]
+name = "level: 1"
+color = "0e8a16"
+description = "Apprentice"
+
+[[labels]]
+name = "level: 2"
+color = "0e8a16"
+description = "Verifier"
+
+[[labels]]
+name = "level: 3"
+color = "0e8a16"
+description = "Spec Lead and Mentor"
+
+[[labels]]
+name = "bug found upstream"
+color = "b60205"
+description = "A bug in the original library, found while writing a specification"
