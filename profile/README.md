@@ -4,9 +4,11 @@ Proven Commons rewrites widely used software libraries in [Lean](https://lean-la
 
 A finished project publishes four things: the library, the specification, a proof a computer can check, and a test report that compares the new code against the original on millions of inputs.
 
-[Website](https://proven-commons.github.io/mission/) · [Mission and founding brief](https://github.com/Proven-Commons/mission) · [Open issues and decisions](https://github.com/Proven-Commons/mission/issues)
+[Website](https://proven-commons.github.io/mission/) · [Mission and founding brief](https://github.com/Proven-Commons/mission) · [Open issues and decisions](https://github.com/Proven-Commons/mission/issues) · [Verified Bar](https://github.com/Proven-Commons/mission/blob/main/playbook/verified-bar.md)
 
 ## The verified bar
+Core operating framework for formally verified software: 
+
 
 A project may use the word verified in public only when all of these hold:
 
@@ -16,6 +18,7 @@ A project may use the word verified in public only when all of these hold:
 - Differential tests against the original ran, and the count, seed, and result are in the repo.
 - The public page lists what is outside the proof: runtime, compiler, hardware, and any unverified code.
 - A stranger can clone the repo, run one command, and re-check the proof.
+
 
 ## Repos
 
